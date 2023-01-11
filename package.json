@@ -1,0 +1,7 @@
+{
+  "name": "4trans-frontend",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
