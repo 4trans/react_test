@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"application.localized":"Localized","application.name":"Client Zone","{0}":[["0"]]}};
