@@ -5,7 +5,9 @@ interface HeaderProps {
 
 const Header = (props: HeaderProps) => {
     return (
-        <div>Header: {props.title}</div>
+        <div className="flex items-center justify-center p-24 bg-black text-white">
+            Header: {props.title}
+        </div>
     )
 }
 
