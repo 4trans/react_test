@@ -1,10 +1,7 @@
 import './App.css';
 import Header from '@4trans/shared/header/Header'
-import { Routes, Route, Link } from 'react-router-dom';
-import React from 'react';
-
-const Home = React.lazy(() => import('./modules/home'));
-const About = React.lazy(() => import('./modules/about'));
+import { Link } from 'react-router-dom';
+import Router from './Router';
 
 function App() {
   return (
@@ -15,26 +12,7 @@ function App() {
         {` | `}
         <Link to="/about">About</Link>
       </nav>
-
-
-        <Routes>
-          <Route
-            index
-            element={
-              <React.Suspense fallback={<>...</>}>
-                <Home />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="about"
-            element={
-              <React.Suspense fallback={<>...</>}>
-                <About />
-              </React.Suspense>
-            }
-          />
-        </Routes>
+      <Router />
     </div>
   );
 }
